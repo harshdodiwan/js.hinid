@@ -46,6 +46,7 @@ console.log(tinderuser.table)
 
 
 
+
 const blink = {
 
     email: "some@yahooo",
@@ -61,7 +62,25 @@ const blink = {
 
 
 console.log(blink.fullname)
-console.log(blink.fullname.secondname)
+console.log(blink.fullname.firstname)
+
+
+const obj1 = {1:"a", 2:"b"}
+const obj2 = {3:"c", 4:"d"}
+
+// obj3 = {obj1,obj2}
+
+obj4 =Object.assign(obj1,obj2)
+
+obj5 = {...obj1,...obj2}
+
+// we gonna use this mostly spread wali term 
+
+// console.log(obj3)
+console.log(obj4)
+console.log(obj5)
+
+
 
 
 
