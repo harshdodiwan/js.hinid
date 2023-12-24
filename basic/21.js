@@ -42,13 +42,13 @@ if (true){
 // jo vlaue globla scope m hoti h wo block sco[e m avialable hoti h but ]
 // block scope jo value likhte h woh bhar nhi jani chahiye 
 
-let f = 10
+// let f = 10
 
-if (true){
-   let g = 440
-   let f = 567
-}
-console.log(f)
+// if (true){
+//    let g = 440
+//    let f = 567
+// }
+// console.log(f)
 
 
 // agr var lega datatype
@@ -60,17 +60,53 @@ console.log(f)
 
 // +++++++++++++  nested scope   +++++++++++++++++++++
 
-function one (){
-   let user= "harsh"
+// function one (){
+//    let user= "harsh"
 
-    function two(){
-      let age = "20"
-        console.log(user)
-    }
-    console.log(age)
+//     function two(){
+//       let age= "20"
+//         console.log(user)
+//     }
+//     // console.log(age)
  
-    two()
+//     two()
+
+// }
+
+// one()
+
+if (true){
+
+  const username = "dodiwan"
+
+  if(username==="dodiwan")
+
+  {
+
+ car = " scorpio" 
+ console.log(username+car)
+
+  }
+
+  console.log(car)
+
+  }
+
+// console.log(username)
+
+
+function addone (num) {
+    return num + 1
 
 }
 
+console.log(addone(7))
 
+//  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+function sum (num){
+   return num + 456
+}
+
+
+console.log(sum(4))
