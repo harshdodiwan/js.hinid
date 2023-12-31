@@ -126,3 +126,4 @@ console.log(val)
  
 const  price = 100
 price >= 120 ? console.log("correct price") : console.log("wrong price")
+
