@@ -75,7 +75,7 @@ for (const key in object) {
 }
 
 for (const key in object) {
-    console.log(key ,`=`,object[key] )
+    // console.log(key ,`=`,object[key] )
    
 }
 
@@ -99,7 +99,7 @@ num.forEach((num) => {
         newnum.push(num)    
     }    
 })
-console.log(newnum)
+// console.log(newnum)
 
 const book =[
     {
@@ -134,6 +134,33 @@ const book =[
 ]
 
 // const userbok = book.filter( (bk) => (bk.genre === 'action'))
-  userbooks = book.filter((bk)=>(bk.edition ==='2004'))
-console.log(userbooks)
+//  userbooks = book.filter((bk)=>(bk.edition ==='2004'))
+// console.log(userbooks)
 
+ mybook = book.filter((bk) => (bk.title === 'book sixth'))
+// console.log(mybook)
+
+
+
+// ++++++++++++ chaining method ++++++++++++++++++++++++ 
+
+// use map and filter as much as you can 
+
+const count = [1,2,3,4,5,6,7,8,9,10]
+
+let uncount = count
+                                                        //    here we use map 2 times so its chaining depend on first map 
+
+           .map((count ) => (count *10))
+           .map((count ) => (count +1))
+
+
+
+// console.log(uncount)
+
+// +++++++++++++++++++++++++++++++++ reduce in js +++++++++++++++++++++++
+
+const Num = [1,2,3]
+const mynum = num.reduce ( (acc, curr) => acc + curr, 0);
+
+console.log(mynum)
