@@ -81,3 +81,59 @@ for (const key in object) {
 
 
 //  for each loop 
+
+// filter operation - ek callback function milega jisme each key, value access kia jayega 
+// fir hum condition denge jo value consition ko satisfies krengi wo value return hongi 
+//  humne isme this arrow function  use kia h (=> )
+
+const num = [1,2,3,4,5,6,7,8,9,10]
+// const newnum = num.filter( (num) => num > 4)
+// console.log(newnum)
+
+
+// we use foreach for this code 
+
+const  newnum=  []
+num.forEach((num) => {
+    if (num>4) {
+        newnum.push(num)    
+    }    
+})
+console.log(newnum)
+
+const book =[
+    {
+        title: 'book one', genre : 'fiction', edition : '2003'
+
+    },
+    {
+        title: 'book two', genre : 'action', edition : '2004'
+        
+    },
+    {
+        title: 'book third', genre : 'fiction', edition : '2003'
+        
+    },
+    {
+        title: 'book fourth', genre : 'romance', edition : '2005'
+        
+    },
+    {
+        title: 'book fifth', genre : 'action', edition : '2003'
+        
+    },
+    {
+        title: 'book sixth', genre : 'romance', edition : '2004'
+        
+    },
+    {
+        title: 'book seven', genre : 'fiction', edition : '2005'
+        
+    }
+
+]
+
+// const userbok = book.filter( (bk) => (bk.genre === 'action'))
+  userbooks = book.filter((bk)=>(bk.edition ==='2004'))
+console.log(userbooks)
+
