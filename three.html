@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code aur chai</title>
+</head>
+<body style="background-color: rgb(192, 187, 187);">
+
+     <!-- to create a new element in dom  -->
+     <!-- set setAttributes used to add more title of div  -->
+<h1>
+    nidnfoirmform
+</h1>
+
+</body>
+<script>
+    const div= document.createElement('h1')
+    console.log(div);
+    div.classname = "main "
+    // div.id = math.round(math.random())
+    div.setAttributes("title", "generated title")
+    // div.innerText= "chai aur code"
+   const addtext=  document.createTextNode("code or chai")
+   div.appendChild(addtext)
+document.body.appendChild(div)
+</script>
+</html>

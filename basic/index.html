@@ -2,33 +2,26 @@
 <html lang="en">
 <head>
   
-    <title>DOM  LEARNING</title>
-    <style>
-        .bg-black{
-            background-color: rgb(10, 10, 10);
-            color:rgba(246, 238, 238, 0.63)
-        }
-    </style>
+    <title>DOM  LEARNING code aur chai</title>
+   
 
        
 </head>
-<body
-class="bg-black">
-    <div  >
-        <h1 id="title" class="headign">DOM LEARNING ON CODE AUR CHAI</h1>
-        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint.</h2>
-        <h3>
-            Lorem ipsum dolor sit amet consecteturus consectetur tempora inventore.
-        </h3>
-        <p> Lorem ipsum dolor sit amet.</p>
+<body style="background-color: black;">
 
-
-        <ul>
-            <li>one </li>
-            <li>two</li>
-            <li>three</li>
-        </ul>
-
+    
+    <div style="color: aliceblue;" class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
     </div>
+
 </body>
+
+<script>
+    const parent=  document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children[1]);
+</script>
 </html>
