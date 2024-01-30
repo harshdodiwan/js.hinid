@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>code aur chai<title>
+    <title>code aur chai</title>
         <!-- edit and remove elementin DOM -->
 </head>
-<body style="background-color: black;">
+
+<h1>
+    hidieanfaelinf
+</h1>
+<body style="background-color: black; color: antiquewhite;" >
     <ul class="language">
         <li>
             java script
         </li>
+        <li>
+            python
+        </li>
     </ul>
 </body>
+<script>
+   function addLanguage(langname){
+    const li = document.createElement('li');
+    li.innerHTML = langname
+    document.querySelector('.language');
+    appendChild(li)
+   }
+   addLanguage("cjnfh")
+
+//    after using this syntax ek new element add ho jayega 
+// wo toh mera nhi ho para kyuki mera script ka text dom m nhi chl pa rha h abhi filhall ek seekhle ki konse element se kya ho rha h atleast note m tohb rhega na  
+
+function addOptilanguage(langname){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').appendChild(li)
+
+}
+
+addOptilanguage('golang')
+
+
+// edit 
+
+ const secondlang =document.querySelector("li:nth-child(2)")
+ console.log(secondlang);
+ const newli = document.createElement("li")
+newli.textContent = "mojjo"
+secondlang.replaceWith(newli)
+
+// remove 
+
+const lastlang = document.querySelector('li:last-child')
+langname.remove()
+
+
+</script>
 </html>
