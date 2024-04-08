@@ -1,2 +1,2 @@
 # js.hindi
-a code repo javascript series with code with chai 
+javascript series with code with chai 
