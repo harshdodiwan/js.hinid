@@ -1,5 +1,5 @@
 // primitive datatypes (seven types)
-// String, number,boolean, null, undefined , symbol, bigint
+// String, number,boolean, null, undefined , symbol,big int
 
 // non-primitive (refernces)
 // aaray , objects, functions
